@@ -1,4 +1,10 @@
-const InfoCard = ({ description, title, url }) => {
+interface InfoCardProps {
+  description: string;
+  title: string;
+  url: string;
+}
+
+const InfoCard: React.FC<InfoCardProps> = ({ description, title, url }) => {
   return (
     <a
       href={url}
