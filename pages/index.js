@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { InfoCard } from "../src/shared/components/InfoCard";
+import { InfoCard } from "shared/components/InfoCard";
 
 export default function Home() {
   return (
