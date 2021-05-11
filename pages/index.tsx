@@ -37,19 +37,19 @@ const Index: NextPage = () => {
           <InfoCard
             description={`Learn about Next.js in an interactive course with quizzes!`}
             title={`Learn`}
-            url={`https://nextjs.org/learn`}
+            url={`/learn`}
           />
 
           <InfoCard
             description={`Discover and deploy boilerplate example Next.js projects.`}
             title={`Examples`}
-            url={`https://github.com/vercel/next.js/tree/master/examples`}
+            url={`/examples`}
           />
 
           <InfoCard
             description={`Instantly deploy your Next.js site to a public URL with Vercel.`}
             title={`Deploy`}
-            url={`https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app`}
+            url={`/deploy`}
           />
         </div>
       </main>
