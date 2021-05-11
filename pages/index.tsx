@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { NextPage } from "next";
 import { InfoCard } from "shared/components/InfoCard";
+import { Link } from "shared/components/Link";
 
 const Index: NextPage = () => {
   return (
@@ -13,12 +14,15 @@ const Index: NextPage = () => {
       <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
           Welcome to{" "}
-          <a className="text-blue-600" href="https://nextjs.org">
+          <Link
+            className="bg-gradient-to-r from-pink-500 focus:text-black hover:text-black to-yellow-500 px-4 py-2 text-white"
+            href="https://nextjs.org"
+          >
             Next.js!
-          </a>
+          </Link>
         </h1>
 
-        <p className="mt-3 text-2xl">
+        <p className="mt-6 text-2xl">
           Get started by editing{" "}
           <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
             pages/index.js
@@ -53,15 +57,13 @@ const Index: NextPage = () => {
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
+        <Link
           className="flex items-center justify-center"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+        </Link>
       </footer>
     </div>
   );

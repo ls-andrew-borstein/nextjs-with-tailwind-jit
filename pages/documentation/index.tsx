@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { NextPage } from "next";
-import Link from "next/link";
+import { Link } from "shared/components/Link";
 
 const Index: NextPage = () => {
   return (
@@ -18,31 +18,42 @@ const Index: NextPage = () => {
         </p>
 
         <div>
-          <a
-            className="border border-blue-100 font-semibold hover:bg-blue-100 mx-3 px-4 py-2 rounded text-blue-600 underline"
+          <Link
+            className="border border-blue-100 font-semibold focus:bg-blue-100 focus:outline-none hover:bg-blue-100 mx-3 px-4 py-2 rounded text-blue-600 underline"
             href="https://nextjs.org/docs"
           >
             View the docs.
-          </a>
+          </Link>
 
-          <Link href="/">
-            <a className="border border-blue-100 font-semibold hover:bg-blue-100 mx-3 px-4 py-2 rounded text-blue-600 underline">
-              &larr; Back to Home
-            </a>
+          <Link
+            className="border border-blue-100 font-semibold focus:bg-blue-100 focus:outline-none hover:bg-blue-100 mx-3 px-4 py-2 rounded text-blue-600 underline"
+            href="/"
+          >
+            &larr; Back to Home
           </Link>
         </div>
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        Powered by&nbsp;
+        <Link className="underline text-blue-600" href={`https://nextjs.org/`}>
+          NextJS
+        </Link>
+        ,&nbsp;
+        <Link
+          className="underline text-blue-600"
+          href={`https://tailwindcss.com/docs/just-in-time-mode`}
         >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+          TailwindCSS
+        </Link>
+        , and&nbsp;
+        <Link
+          className="underline text-blue-600"
+          href={`https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app`}
+        >
+          Vercel
+        </Link>
+        .
       </footer>
     </div>
   );
