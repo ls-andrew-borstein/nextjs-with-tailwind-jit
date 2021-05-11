@@ -1,7 +1,8 @@
 import Head from "next/head";
+import { NextPage } from "next";
 import { InfoCard } from "shared/components/InfoCard";
 
-export default function Home() {
+const Index: NextPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -64,4 +65,6 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+};
+
+export default Index;
