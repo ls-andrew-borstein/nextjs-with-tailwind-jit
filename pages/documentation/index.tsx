@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { NextPage } from "next";
-import { Link } from "shared/components/Link";
+import { Footer, Link } from "shared/components";
 
 const Index: NextPage = () => {
   return (
@@ -34,27 +34,7 @@ const Index: NextPage = () => {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        Powered by&nbsp;
-        <Link className="underline text-blue-600" href={`https://nextjs.org/`}>
-          NextJS
-        </Link>
-        ,&nbsp;
-        <Link
-          className="underline text-blue-600"
-          href={`https://tailwindcss.com/docs/just-in-time-mode`}
-        >
-          TailwindCSS
-        </Link>
-        , and&nbsp;
-        <Link
-          className="underline text-blue-600"
-          href={`https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app`}
-        >
-          Vercel
-        </Link>
-        .
-      </footer>
+      <Footer />
     </div>
   );
 };

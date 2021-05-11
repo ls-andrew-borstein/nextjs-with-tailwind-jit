@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { NextPage } from "next";
-import { InfoCard } from "shared/components/InfoCard";
-import { Link } from "shared/components/Link";
+import { Footer, InfoCard, Link } from "shared/components";
 
 const Index: NextPage = () => {
   return (
@@ -56,15 +55,7 @@ const Index: NextPage = () => {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <Link
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </Link>
-      </footer>
+      <Footer />
     </div>
   );
 };

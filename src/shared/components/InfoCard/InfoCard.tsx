@@ -1,4 +1,4 @@
-import { Link } from "shared/components/Link";
+import { Link } from "shared/components";
 
 interface InfoCardProps {
   description: string;
