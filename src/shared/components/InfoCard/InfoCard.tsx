@@ -9,7 +9,7 @@ interface InfoCardProps {
 const InfoCard: React.FC<InfoCardProps> = ({ description, title, url }) => {
   return (
     <Link
-      className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+      className="p-6 text-left border rounded-xl hover:text-blue-600 focus:text-blue-600"
       href={url}
     >
       <h2 className="text-2xl font-bold">{title} &rarr;</h2>
