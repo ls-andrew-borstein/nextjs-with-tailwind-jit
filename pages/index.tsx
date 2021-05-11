@@ -29,7 +29,7 @@ const Index: NextPage = () => {
           <InfoCard
             description={`Find in-depth information about Next.js features and API.`}
             title={`Documentation`}
-            url={`https://nextjs.org/docs`}
+            url={`/documentation`}
           />
 
           <InfoCard
