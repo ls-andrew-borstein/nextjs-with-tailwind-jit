@@ -20,6 +20,9 @@ const Index: NextPage = () => {
             </Link>
           </h1>
 
+          {/* <img src="puppy.jpg" />
+          <img src="kitten.jpg" /> */}
+
           <p className="mt-4 sm:mt-6 text-2xl">
             Get started by editing{" "}
             <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">

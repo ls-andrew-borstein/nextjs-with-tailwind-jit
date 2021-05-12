@@ -23,3 +23,32 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+const terminalLog = (violations) => {
+  cy.task("log", "");
+  cy.task("log", `${violations.length} accessibility violations detected:`);
+  // pluck specific keys to keep the table readable
+  const violationData = violations.map(({ id, impact, description, nodes }) => {
+    return {
+      id,
+      impact,
+      description,
+      nodes: nodes.map((n) => n.html),
+    };
+  });
+
+  cy.task("table", violationData);
+};
+
+Cypress.Commands.add(
+  "assertA11y",
+  (
+    context = null,
+    options = null,
+    violationCallback = terminalLog,
+    skipFailures = null
+  ) => {
+    cy.injectAxe();
+    cy.checkA11y(context, options, violationCallback, skipFailures);
+  }
+);
