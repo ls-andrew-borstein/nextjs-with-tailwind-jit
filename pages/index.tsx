@@ -10,7 +10,7 @@ const Index: NextPage = () => {
       </Head>
       <div className="min-h-screen flex flex-col">
         <main className="flex-1 flex flex-col justify-center items-center align-middle sm:max-w-3xl sm:mx-auto p-3 text-center">
-          <h1 className="text-6xl font-bold mt-3 sm:mt-0">
+          <h1 className="text-5xl md:text-6xl font-bold mt-3 sm:mt-0">
             Welcome to{" "}
             <Link
               className="bg-gradient-to-r from-pink-500 focus:text-black hover:text-black to-yellow-500 block sm:inline-block px-4 py-2 text-white md:h-[77px]"
