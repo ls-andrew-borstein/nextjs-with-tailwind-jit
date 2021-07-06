@@ -13,7 +13,7 @@ const Index: NextPage = () => {
           <h1 className="text-6xl font-bold mt-3 sm:mt-0">
             Welcome to{" "}
             <Link
-              className="bg-gradient-to-r from-pink-500 focus:text-black hover:text-black to-yellow-500 block sm:inline px-4 py-2 text-white"
+              className="bg-gradient-to-r from-pink-500 focus:text-black hover:text-black to-yellow-500 block sm:inline-block px-4 py-2 text-white md:h-[77px]"
               href="https://nextjs.org"
             >
               Next.js!
