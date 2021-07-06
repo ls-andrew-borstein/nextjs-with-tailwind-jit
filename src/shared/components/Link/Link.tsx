@@ -1,17 +1,6 @@
 import NextLink from "next/link";
 import React from "react";
 
-const externalProps = (href: string) => {
-  let props = {};
-  if (href.includes("http")) {
-    props = {
-      rel: "external noreferrer noopener",
-      target: "_blank",
-    };
-  }
-  return props;
-};
-
 interface LinkProps {
   className?: string;
   children: React.ReactNode;
@@ -19,11 +8,24 @@ interface LinkProps {
 }
 
 const Link: React.FC<LinkProps> = ({ className, children, href }) => {
-  return (
-    <NextLink href={href}>
-      <a className={className} {...externalProps(href)}>
+  const isExternal = href.includes("http");
+
+  if (isExternal) {
+    return (
+      <a
+        className={className}
+        href={href}
+        rel="external noreferrer noopener"
+        target="_blank"
+      >
         {children}
       </a>
+    );
+  }
+
+  return (
+    <NextLink href={href}>
+      <a className={className}>{children}</a>
     </NextLink>
   );
 };
