@@ -1,9 +1,9 @@
 import "tailwindcss/tailwind.css";
-import Head from "next/head";
 import { AppProps } from "next/app";
+import Head from "next/head";
 import "../public/styles/global.css";
 
-const NextApp = ({ Component, pageProps }: AppProps) => {
+const NextApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>

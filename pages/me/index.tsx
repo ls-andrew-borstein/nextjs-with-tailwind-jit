@@ -1,7 +1,8 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import profilePic from "../../public/images/me.jpg";
 import { Page } from "shared/components";
+
+import profilePic from "../../public/images/me.jpg";
 
 const Me: NextPage = () => {
   return (
@@ -19,9 +20,9 @@ const Me: NextPage = () => {
         <div className="pt-6 md:p-8 space-y-4">
           <blockquote>
             <p className="text-lg font-semibold">
-              “Tailwind CSS is the only framework that I've seen scale on large
-              teams. It’s easy to customize, adapts to any design, and the build
-              size is tiny.”
+              “Tailwind CSS is the only framework that I have seen scale on
+              large teams. It’s easy to customize, adapts to any design, and the
+              build size is tiny.”
             </p>
           </blockquote>
           <figcaption className="font-medium">
