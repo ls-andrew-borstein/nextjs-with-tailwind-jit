@@ -19,7 +19,7 @@ const Page: React.FC<PageProps> = ({ children, title }) => {
         <title>{pageTitle}</title>
       </Head>
       <div className="min-h-screen flex flex-col">
-        <main className="flex-1 flex flex-col justify-center items-center align-middle sm:max-w-3xl sm:mx-auto p-3 text-center">
+        <main className="flex-1 flex flex-col justify-center items-center align-middle sm:max-w-3xl sm:mx-auto p-3">
           <h1 className="text-4xl sm:text-6xl font-bold">{title}</h1>
           <Link
             className="absolute top-3 left-3 font-semibold hover:text-blue-900 p-3 rounded text-blue-600 underline"
