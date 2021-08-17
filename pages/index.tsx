@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { NextPage } from "next";
-import { Footer, InfoCard, Link } from "shared/components";
+import { Footer, InfoCard, InfoCardCSSModule, Link } from "shared/components";
 
 const Index: NextPage = () => {
   return (
@@ -36,7 +36,7 @@ const Index: NextPage = () => {
               url="/documentation"
             />
 
-            <InfoCard
+            <InfoCardCSSModule
               description="Learn about Next.js in an interactive course with quizzes!"
               title="Learn"
               url="/learn"
