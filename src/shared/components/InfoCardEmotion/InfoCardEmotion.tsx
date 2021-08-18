@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { Link } from "shared/components";
 
-const StyledLink = styled(Link)`
+const StyledLink = styled("a")`
   border-radius: 0.75rem;
   border-width: 1px;
   outline: 2px solid transparent;
@@ -40,7 +40,7 @@ const InfoCardEmotion: React.FC<InfoCardEmotionProps> = ({
   url,
 }) => {
   return (
-    <StyledLink href={url}>
+    <StyledLink as={Link} href={url}>
       <Title>{title} &rarr;</Title>
       <Description>{description}</Description>
     </StyledLink>
