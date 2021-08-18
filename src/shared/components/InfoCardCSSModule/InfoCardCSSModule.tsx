@@ -1,4 +1,5 @@
 import { Link } from "shared/components";
+
 import styles from "./InfoCardCSSModule.module.css";
 
 interface InfoCardCSSModuleProps {

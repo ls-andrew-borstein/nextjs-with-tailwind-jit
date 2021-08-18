@@ -1,6 +1,12 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import { Footer, InfoCard, InfoCardCSSModule, Link } from "shared/components";
+import {
+  Footer,
+  InfoCard,
+  InfoCardCSSModule,
+  InfoCardEmotion,
+  Link,
+} from "shared/components";
 
 const Index: NextPage = () => {
   return (
@@ -42,7 +48,7 @@ const Index: NextPage = () => {
               url="/learn"
             />
 
-            <InfoCard
+            <InfoCardEmotion
               description="Discover and deploy boilerplate example Next.js projects."
               title="Examples"
               url="/examples"

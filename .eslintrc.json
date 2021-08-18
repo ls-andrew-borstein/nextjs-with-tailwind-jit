@@ -4,7 +4,7 @@
     "next/core-web-vitals",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint", "eslint-plugin-import-helpers"],
+  "plugins": ["@emotion", "@typescript-eslint", "eslint-plugin-import-helpers"],
   "rules": {
     "import-helpers/order-imports": [
       "error",
