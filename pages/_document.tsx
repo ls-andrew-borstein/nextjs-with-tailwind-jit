@@ -22,7 +22,7 @@ class AppDocument extends Document {
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans&display=optional"
-            rel="stylesheet"
+            rel="preload"
           />
         </Head>
         <body>
