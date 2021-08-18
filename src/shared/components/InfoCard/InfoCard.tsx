@@ -11,7 +11,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ description, title, url }) => {
     <Link
       className="
         border focus:border-blue-600 rounded-xl outline-none
-        p-6 space-y-3
+        p-4 space-y-2
         text-left hover:text-blue-600
       "
       href={url}

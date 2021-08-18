@@ -21,6 +21,7 @@ class AppDocument extends Document {
       <Html lang="en">
         <Head>
           <link
+            as="style"
             href="https://fonts.googleapis.com/css2?family=Open+Sans&display=optional"
             rel="preload"
           />

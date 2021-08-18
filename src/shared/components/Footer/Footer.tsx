@@ -2,7 +2,7 @@ import { Link } from "shared/components";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-center w-full h-24 border-t mt-auto whitespace-pre-wrap">
+    <footer className="flex items-center justify-center w-full p-2 border-t mt-auto whitespace-pre-wrap">
       Powered by{" "}
       <Link
         className="hover:text-blue-900 text-blue-600 underline"

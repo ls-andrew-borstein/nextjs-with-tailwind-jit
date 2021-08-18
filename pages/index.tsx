@@ -5,6 +5,7 @@ import {
   InfoCard,
   InfoCardCSSModule,
   InfoCardEmotion,
+  InfoCardStyledSystem,
   Link,
 } from "shared/components";
 
@@ -35,7 +36,7 @@ const Index: NextPage = () => {
             </code>
           </p>
 
-          <div className="grid grid-flow-row sm:grid-cols-2 gap-6 mt-9 w-full">
+          <div className="grid grid-flow-row sm:grid-cols-2 gap-3 mt-5 w-full">
             <InfoCard
               description="Find in-depth information about Next.js features and API."
               title="Documentation"
@@ -54,7 +55,7 @@ const Index: NextPage = () => {
               url="/examples"
             />
 
-            <InfoCard
+            <InfoCardStyledSystem
               description="Instantly deploy your Next.js site to a public URL with Vercel."
               title="Deploy"
               url="/deploy"

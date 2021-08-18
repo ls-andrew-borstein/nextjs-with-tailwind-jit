@@ -12,7 +12,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   href,
 }) => {
   const defaultClassName =
-    "border border-blue-100 font-semibold hover:bg-blue-100 focus:bg-blue-100 focus:outline-none px-4 py-2 rounded text-blue-600 underline";
+    "border border-blue-100 font-semibold hover:bg-blue-100 focus:bg-blue-100 focus:outline-none px-4 py-1 rounded text-blue-600 underline";
 
   return (
     <Link className={`${defaultClassName} ${className || ""}`} href={href}>
