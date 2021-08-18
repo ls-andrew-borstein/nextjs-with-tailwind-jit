@@ -7,8 +7,8 @@ import profilePic from "../../public/images/me.jpg";
 const Me: NextPage = () => {
   return (
     <Page title="Me">
-      <figure className="mt-3 md:flex bg-gray-100 rounded-xl p-8 md:p-0 overflow-hidden">
-        <div className="w-32 h-32 md:w-96 md:h-auto rounded-full md:rounded-none mx-auto relative overflow-hidden">
+      <figure className="mt-3 md:flex bg-gray-100 rounded-xl p-5 md:p-0 overflow-hidden">
+        <div className="w-[8rem] h-[8rem] md:w-[24rem] md:h-auto rounded-full md:rounded-none mx-auto relative overflow-hidden">
           <Image
             alt="Andrew"
             layout="fill"
@@ -17,7 +17,7 @@ const Me: NextPage = () => {
             src={profilePic}
           />
         </div>
-        <div className="pt-6 md:p-8 space-y-4">
+        <div className="p-4 md:p-5 space-y-3">
           <blockquote>
             <p className="text-lg font-semibold">
               “Tailwind CSS is the only framework that I have seen scale on
